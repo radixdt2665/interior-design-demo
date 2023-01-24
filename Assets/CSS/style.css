@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(/Assets/fonts/LeagueSpartan-Regular-woff.woff) format(woff),
+    url(/Assets/fonts/LeagueSpartan-Regular-woff2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url(/Assets/fonts/LeagueSpartan-Bold-woff.woff) format(woff),
+    url(/Assets/fonts/LeagueSpartan-Bold-woff-2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+:root {
+  --LeagueSpartan: "LeagueSpartan";
+  --LeagueSpartan-Bold: "LeagueSpartan-Bold";
+
+  --primary-color: #c14545;
+  --secondary-color : #e2dcce;
+  --secondary-color-100 : #e5ddcf;
+  --theme-black: #191313;
+  --white-color : #ffffff;
+  --primary-color-100 : #a84747;
+  
+
+  --font-9: 9px;
+  --font-10: 10px;
+  --font-11: 11px;
+  --font-12: 12px;
+  --font-13: 13px;
+  --font-14: 14px;
+  --font-58: 58px;
+  --font-69: 69px;
+
+  --line-height-14: 14px;
+  --line-height-15: 15px;
+  --line-height-73: 73px;
+}
+
+
+.text-theme{color: var(--primary-color);}
+.text-secondary-custom{color: var(--secondary-color);}
+.text-secondary-100-custom{color: var(--secondary-color-100);}
+.text-theme-black{color: var(--theme-black);}
+.color-white {color: var(--white-color);}
+.primary-color-100 {color: var(--primary-color-100);}
+
+.bg-theme{background-color: var(--primary-color);}
+.bg-secondary-custom{background-color: var(--secondary-color);}
+.bg-theme-black{background-color: var(--theme-black);}
+.bg-primary-100{background-color: var(--primary-color-100);}
+
+
+.font-9{font-size: var(--font-9);}
+.font-10{font-size: var(--font-10);}
+.font-11{font-size: var(--font-11);}
+.font-12{font-size: var(--font-12);}
+.font-13{font-size: var(--font-13);}
+.font-14{font-size: var(--font-14);}
+.font-15{font-size: var(--font-15);}
+.font-58{font-size: var(--font-58);}
+.font-69{font-size: var(--font-69);}
+.w-30px{width: 30px;}
+
+
+.line-height-14{line-height: var(--line-height-14);}
+.line-height-15{line-height: var(--line-height-15);}
+.line-height-73{line-height: var(--line-height-73);}
+
+.letter-spacing-2{letter-spacing: 2px;}
+
+.icon-white{filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(17deg) brightness(89%) contrast(120%);}
+
+
+.font-LeagueSpartan {font-family: var(--LeagueSpartan), sans-serif;}
+.font-LeagueSpartan-bold {font-family: var(--LeagueSpartan-Bold), sans-serif;}
+
+body,
+html {background-image: url(../../Assets/images/background-texture.png);font-family: var(--LeagueSpartan), sans-serif;}
+/* .theme-btn{background-color: #fff;} */
+ 
+.py-150{padding: 150px 0;}
+
+.border-radius-15rem{border-radius: 15rem;}
+
+.theme-btn-alt{border: 1px solid var(--primary-color-100);}
+
+/* navbar-css start */
+.custom-navbar{position: fixed;width: 100%;top: 0;z-index: 99;}
+.custom-navbar .home-img-icon{height: 50px;width: 50px;border: 2px solid var(--primary-color);border-radius: 50%;position: absolute;left: 50%;transform: translateX(-50%);}
+.custom-navbar .home-icon{height: 19px;width: 20px;}
+.custom-navbar .search-input-div{position: relative;}
+.custom-navbar .search-input-div::after{position: absolute;content: '';height: 1px;width: 100%;background: var(--primary-color);}
+.custom-navbar .search-input-div .search-input{border: 0;background: transparent;text-align: end;}
+.custom-navbar .search-input-div .search-input::placeholder{color: var(--primary-color);text-transform: uppercase;font-size: var(--font-12);}
+.custom-navbar .search-input-div .search-input:focus{box-shadow: none;}
+.side-nav{height: 100%;position: fixed;top: 0;width: 400px;left: 0;z-index: 999;transform: translateX(-100%);transition: 0.4s all;}
+.side-nav-main .show-nav{transform: translateX(0%);transition: 0.4s all;}
+/* navbar-css end */
+
+
+/* banner-section-css start */
+.banner-section{padding-top: 66px;min-height: 100vh;position: relative;overflow: hidden;}
+.banner-section .img-p-div img{border-radius: 15rem;/* object-fit: cover; *//* width: 100%; */}
+.banner-section .round-left{position: absolute;height: 300px;width: 300px;bottom: -30px;border: 2px solid var(--primary-color);border-radius: 50%;left: -60px;}
+.banner-section .round-right{position: absolute;height: 330px;width: 330px;bottom: -100px;border: 2px solid var(--primary-color);border-radius: 50%;right: -90px;}
+.banner-section .hr-line{border-color: var(--primary-color);border-width: 2px;opacity: 1;}
+.banner-section .vr-line{position: relative;}
+.banner-section .vr-line::before{position: absolute;content: '';height: 100px;width: 1px;background: var(--primary-color);top: -50px;}
+.banner-section .round-left .hr-line{position: absolute;width: 350px;height: 2px;background: var(--primary-color);top: 40%;left: 45%;}
+/* banner-section-css end */
+
+/* what-we-do-section css start */
+.what-we-do-section{background-image: url(../../Assets/images/red-texture-bg.jpg);min-height: 100vh;}
+.what-we-do-section .content-main{margin-top: 7rem;}
+.what-we-do-section .content-main .para{margin: 3rem 0 6rem 0;}
+/* what-we-do-section css end */
+
+
+/* our-work-section css start */
+.our-work-section{background-image: url(../../Assets/images/background-texture.png);min-height: 100vh;}
+/* our-work-section css end */
+
+/* design-for-need-section css start */
+.design-for-need-section{background-image: url(../../Assets/images/red-texture-bg.jpg);min-height: 100vh;}
+/* design-for-need-section css end */
+
+/* selection-section css start */
+.selection-section{min-height:100vh;}
+.selection-section .sub-img{left: -100px;}
+/* .selection-section .sub-img::before{position: absolute;content: '';background-color: var(--primary-color);height: 350px;width: 2px;top: 0;left: 50%;transform: translateX(-50%);}
+.selection-section .sub-img::after{position: absolute;content: '';background-color: var(--primary-color);} */
+/* selection-section css end */
+
+/* clientele-section css start */
+.clientele-section{background-image: url(../images/red-texture-bg.jpg);min-height: 100vh;}
+/* clientele-section css end */
+
+@media(max-width:1199px){
+  :root {
+      
+      --font-9: 9px;
+      --font-10: 10px;
+      --font-11: 11px;
+      --font-12: 12px;
+      --font-13: 13px;
+      --font-14: 14px;
+      --font-58: 58px;
+      --font-69: 48px;
+  
+      --line-height-14: 14px;
+      --line-height-15: 15px;
+      --line-height-73: 50px;
+  }
+
+  .banner-section .round-left{height: 250px;width: 250px;}
+  .banner-section .round-right{width: 230px;height: 230px;bottom: -60px;right: -40px;}
+}
+
+@media(max-width:991px){
+  .py-150{padding: 100px 0;}
+  
+  .banner-section .round-left,
+  .banner-section .round-right{opacity: 0.1;}
+
+  .what-we-do-section{min-height: 0;}
+  .what-we-do-section .content-main{margin-top: 4rem;}
+  .what-we-do-section .content-main .para{margin: 2rem 0}
+}
+
+@media(max-width:767px){
+  .py-150{padding: 50px 0;}
+
+  .banner-section .round-right{bottom: -5%;right: -10%;}
+  .banner-section .round-left .hr-line{width: 85%;}
+  .banner-section .round-left{height: 150px;width: 150px;}
+
+  .what-we-do-section{padding: 50px 0;}
+  .what-we-do-section .content-main{margin-top: 2rem;}
+}
+
+@media(max-width:575px){
+  :root {
+      --font-69: 41px;
+  }
+  .banner-section .vr-line::before{display: none;}
+  .banner-section .round-right{height: 230px;width: 230px;}
+  .banner-section .round-left{height: 100px;width: 100px;}
+  .banner-section .round-left .hr-line{width: 85px;}
+}
+
