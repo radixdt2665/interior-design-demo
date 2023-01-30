@@ -71,6 +71,7 @@
 .line-height-15{line-height: var(--line-height-15);}
 .line-height-73{line-height: var(--line-height-73);}
 
+.letter-spacing-1{letter-spacing: 1px;}
 .letter-spacing-2{letter-spacing: 2px;}
 
 .icon-white{filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(17deg) brightness(89%) contrast(120%);}
@@ -90,7 +91,7 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 .theme-btn-alt{border: 1px solid var(--primary-color-100);}
 
 /* navbar-css start */
-.custom-navbar{position: fixed;width: 100%;top: 0;z-index: 99;}
+/* .custom-navbar{position: fixed;width: 100%;top: 0;z-index: 99;} */
 .custom-navbar .home-img-icon{height: 50px;width: 50px;border: 2px solid var(--primary-color);border-radius: 50%;position: absolute;left: 50%;transform: translateX(-50%);}
 .custom-navbar .home-icon{height: 19px;width: 20px;}
 .custom-navbar .search-input-div{position: relative;}
@@ -104,7 +105,7 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 
 
 /* banner-section-css start */
-.banner-section{padding-top: 66px;min-height: 100vh;position: relative;overflow: hidden;}
+.banner-section{min-height: 100vh;position: relative;overflow: hidden;}
 .banner-section .img-p-div img{border-radius: 15rem;/* object-fit: cover; *//* width: 100%; */}
 .banner-section .round-left{position: absolute;height: 300px;width: 300px;bottom: -30px;border: 2px solid var(--primary-color);border-radius: 50%;left: -60px;}
 .banner-section .round-right{position: absolute;height: 330px;width: 330px;bottom: -100px;border: 2px solid var(--primary-color);border-radius: 50%;right: -90px;}
@@ -139,6 +140,22 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 /* clientele-section css start */
 .clientele-section{background-image: url(../images/red-texture-bg.jpg);min-height: 100vh;}
 /* clientele-section css end */
+
+/* revamp-section css start */
+.revamp-section{min-height: 100vh;}
+.revamp-section .border-round{height: 115px;width: 115px;border-radius: 50%;border: 2px solid var(--primary-color);position: relative;}
+.revamp-section .border-round::after{position: absolute;content: '';}
+.revamp-section .hr-line{position: absolute;}
+.revamp-section .hr-red-line{position: absolute;}
+.revamp-section .revamping-img-round{height: 220px;width: 220px;border-radius: 50%;object-fit: cover;}
+/* revamp-section css end */
+
+/* footer-main css start */
+.footer-main{background-image: url(/Assets/images/red-texture-bg.jpg);}
+.footer-main .footer-link{position: relative;}
+.footer-main .footer-link::before{position: absolute;content: '';width: 10px;height: 2px;background: var(--secondary-color);top: 50%;transform: translateY(-50%);left: -20px;}
+/* footer-main css end */
+
 
 @media(max-width:1199px){
   :root {
