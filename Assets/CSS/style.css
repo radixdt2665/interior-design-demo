@@ -80,6 +80,8 @@
 .font-LeagueSpartan {font-family: var(--LeagueSpartan), sans-serif;}
 .font-LeagueSpartan-bold {font-family: var(--LeagueSpartan-Bold), sans-serif;}
 
+
+
 body,
 html {background-image: url(../../Assets/images/background-texture.png);font-family: var(--LeagueSpartan), sans-serif;}
 /* .theme-btn{background-color: #fff;} */
@@ -92,6 +94,7 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 
 /* navbar-css start */
 /* .custom-navbar{position: fixed;width: 100%;top: 0;z-index: 99;} */
+.custom-navbar{position: relative;}
 .custom-navbar .home-img-icon{height: 50px;width: 50px;border: 2px solid var(--primary-color);border-radius: 50%;position: absolute;left: 50%;transform: translateX(-50%);}
 .custom-navbar .home-icon{height: 19px;width: 20px;}
 .custom-navbar .search-input-div{position: relative;}
@@ -101,6 +104,7 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 .custom-navbar .search-input-div .search-input:focus{box-shadow: none;}
 .side-nav{height: 100%;position: fixed;top: 0;width: 400px;left: 0;z-index: 999;transform: translateX(-100%);transition: 0.4s all;}
 .side-nav-main .show-nav{transform: translateX(0%);transition: 0.4s all;}
+.custom-navbar .nav-gradient{position: absolute;left: 25%;top: -14rem;opacity: 0.7;}
 /* navbar-css end */
 
 
@@ -108,11 +112,13 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 .banner-section{min-height: 100vh;position: relative;overflow: hidden;}
 .banner-section .img-p-div img{border-radius: 15rem;/* object-fit: cover; *//* width: 100%; */}
 .banner-section .round-left{position: absolute;height: 300px;width: 300px;bottom: -30px;border: 2px solid var(--primary-color);border-radius: 50%;left: -60px;}
-.banner-section .round-right{position: absolute;height: 330px;width: 330px;bottom: -100px;border: 2px solid var(--primary-color);border-radius: 50%;right: -90px;}
+.banner-section .round-right .text-img{position: absolute;bottom: -100px;border-radius: 50%;right: -90px;}
 .banner-section .hr-line{border-color: var(--primary-color);border-width: 2px;opacity: 1;}
 .banner-section .vr-line{position: relative;}
 .banner-section .vr-line::before{position: absolute;content: '';height: 100px;width: 1px;background: var(--primary-color);top: -50px;}
 .banner-section .round-left .hr-line{position: absolute;width: 350px;height: 2px;background: var(--primary-color);top: 40%;left: 45%;}
+.banner-left-gradient{position: absolute;top: 15%;left: -15rem;}
+.banner-section .round-right .banner-right-gradient{position: absolute;right: -10rem;opacity: 0.8;}
 /* banner-section-css end */
 
 /* what-we-do-section css start */
@@ -123,16 +129,26 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 
 
 /* our-work-section css start */
-.our-work-section{background-image: url(../../Assets/images/background-texture.png);min-height: 100vh;}
+.our-work-section{background-image: url(../../Assets/images/background-texture.png);min-height: 100vh;position: relative;overflow: hidden;}
+.our-work-section .gradient-top-first{position: absolute;top: -16rem;left: -2%;opacity: 0.7;}
+.our-work-section .gradient-top-second{position: absolute;left: -16%;top: -2rem;;opacity: 0.7}
+.our-work-section .gradient-bottom-left{position: absolute;bottom: 0;left: -14%;opacity: 0.7;}
+.our-work-section .gradient-bottom-right-first{position: absolute;top: 40%;right: -15rem;opacity: 0.7;}
+.our-work-section .gradient-bottom-right-second{position: absolute;top: 50%;right: -3rem;opacity: 0.6;}
 /* our-work-section css end */
 
 /* design-for-need-section css start */
-.design-for-need-section{background-image: url(../../Assets/images/red-texture-bg.jpg);min-height: 100vh;}
+.design-for-need-section{background-image: url(../../Assets/images/red-texture-bg.jpg);min-height: 100vh;position: relative;overflow: hidden;}
+.design-for-need-section .text-w-circle{position: absolute;top: -5rem;right: -5rem;}
+.design-for-need-section .round-circle{position: absolute;height: 257px;width: 257px;border: 1px solid #ffffff;border-radius: 50%;bottom: -4rem;left: -4rem;}
+.design-for-need-section .round-circle .hr-line{width: 415px;height: 1px;background: #ffffff;position: absolute;bottom: 6rem;right: 8rem;}
 /* design-for-need-section css end */
 
 /* selection-section css start */
-.selection-section{min-height:100vh;}
+.selection-section{min-height:100vh;position: relative;overflow: hidden;}
 .selection-section .sub-img{left: -100px;}
+.selection-section .gradient-top{position: absolute;top: -20rem;left: 50%;opacity: 0.7;transform: translateX(-50%);}
+.selection-section .gradient-right-top{position: absolute;right: -9rem;opacity: 0.7;top: 10rem;height: 350px;width: 350px;}
 /* .selection-section .sub-img::before{position: absolute;content: '';background-color: var(--primary-color);height: 350px;width: 2px;top: 0;left: 50%;transform: translateX(-50%);}
 .selection-section .sub-img::after{position: absolute;content: '';background-color: var(--primary-color);} */
 /* selection-section css end */
@@ -148,6 +164,8 @@ html {background-image: url(../../Assets/images/background-texture.png);font-fam
 .revamp-section .hr-line{position: absolute;}
 .revamp-section .hr-red-line{position: absolute;}
 .revamp-section .revamping-img-round{height: 220px;width: 220px;border-radius: 50%;object-fit: cover;}
+.revamp-section .border-bottom-custom{border-bottom: 2px solid;}
+.revamp-section .border-bottom-custom::after{position: absolute;content: '';}
 /* revamp-section css end */
 
 /* footer-main css start */
